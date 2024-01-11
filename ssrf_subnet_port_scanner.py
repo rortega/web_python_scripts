@@ -36,7 +36,7 @@ timeout = float(args.timeout)
 
 
 for sub in sub_host:
-    host="http://172.16.16." + str(sub)
+    host="http://172.xx.xx." + str(sub) #change ip address!!!
     print("Trying host: {host}".format(host=host))
     for p in ports:
         try:
