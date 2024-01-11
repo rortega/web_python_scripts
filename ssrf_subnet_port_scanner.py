@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-t','--target',help='host/ip to target', required=True)
 parser.add_argument('--timeout',help='timeout',required=False,default=3)
 parser.add_argument('-v','--verbose',help='enable verbose mode',action="store_true",default=False)
-#/bin/python3 /home/kali/Desktop/OSWE/ssrf_subnet_port_scanner.py -t http://apigateway:8000/files/import --timeout 2
+#/bin/python3 /home/kali/Desktop/xxxx/ssrf_subnet_port_scanner.py -t http://xxxx:8000/files/import --timeout 2
 args = parser.parse_args()
 
 proxy = {
@@ -24,7 +24,7 @@ ports = ['22','80','443','1433','1521','3306','3389','5000','5432','5900','6379'
 sub_host=['1','2','3','4','5','6']
 timeout = float(args.timeout)
 
-#8001 Kong admin api 8001
+#8001 Kong admin 
 #8055 Default Directors
 #5432 Default Postgres
 #6379 Default Redis
