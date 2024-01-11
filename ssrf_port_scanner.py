@@ -8,7 +8,7 @@ parser.add_argument('-t','--target',help='host/ip to target', required=True)
 parser.add_argument('--timeout',help='timeout',required=False,default=3)
 parser.add_argument('-s','--ssrf',help='ssrf target',required=True)
 parser.add_argument('-v','--verbose',help='enable verbose mode',action="store_true",default=False)
-#/bin/python3 /home/kali/Desktop/OSWE/ssrf_port_scanner.py -t http://apigateway:8000/files/import -s http://localhost --timeout 5
+#/bin/python3 /home/kali/Desktop/xxx/ssrf_port_scanner.py -t http://xxxxx:8000/files/import -s http://localhost --timeout 5
 args = parser.parse_args()
 
 ports = ['22','80','443','1433','1521','3306','3389','5000','5432','5900','6379','8000','8055','8080','8443','9000']
